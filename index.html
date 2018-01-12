@@ -17,21 +17,21 @@
     <!-------------- NAVIGATION ---------------->
     <section class="nav">
         <div class="row">
-            <div class="small-12 large-4 columns logo"><img src="./img/logo.jpg" style="width: 100px; margin: 10px;"></div>
-            <div class="small-12 large-4 columns">
+            <div class="small-12 large-2 columns logo"><img src="./img/logo.jpg" style="width: 100px; margin: 10px;"></div>
+            <div class="small-12 large-7 columns">
                 <ul style="padding-top: 30px; font-size: 1.2em;">
-                    <li>Home</li>
-                    <li>Our Story</li>
-                    <li>Media Center</li>
-                    <li>Contact</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#story">Our Story</a></li>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="small-12 large-4 columns socialIcons">
+            <div class="small-12 large-3 columns socialIcons">
                 <ul style="margin-top: 20px;">
-                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-instagram" aria-hidden="true"></i>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></a></i>
                     </li>
-                    <li><i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></a></i>
                     </li>
                 </ul>
             </div>
@@ -49,20 +49,47 @@
 
     <!-------------- BENEFITS ---------------->
     <section class="benefits">
+        <a id="story"></a>
+        <p>For anyone who enjoys the authentically natural taste of dairy, FARMILY milk is an essential ingredient to the start of every day. Our heavenly organic milk comes from cows that eat grass entirely free of pesticides and fertilisers. Ultra-heat treated to last for up to 90 days unopened, FARMILY milk is packed with natural vitamins and minerals.
+                FARMILY MILK is the flagship brand of Highland Creamers and Foods Ltd. It was launched in June 2017 with 
+                </p>
         <h4>BENEFITS</h4>
         <div class="row">
             <div class="small-12 large-4 columns">
-                <img src="./img/dumbbell.png">
-                <p>Strengthens Immune System</p>
+                <a data-open="calcium"><img src="./img/dumbbell.png"></a>
+                <p>Supplies Calcium</p>
             </div>
             <div class="small-12 large-4 columns">
-                <img src="./img/energy-drink.png">
-                <p>Helps Boost Metabolism</p>
+                <a data-open="rehidration"><img src="./img/energy-drink.png"></a>
+                <p>Rehydration</p>
             </div>
             <div class="small-12 large-4 columns">
-                <img src="./img/pills-bottle.png">
-                <p>Rich in antioxidant properties</p>
+                <a data-open="diet"><img src="./img/pills-bottle.png"></a>
+                <p>Improving Diet & Vitamin Intake</p>
             </div>
+        </div>
+        <div class="reveal" id="calcium" data-reveal>
+            <h2 id="modalTitle">Supplies Calcium</h2>
+            <p class="lead">Milk is the best source of calcium that we can supply to our body. Calcium protects the body from major chronic ailments such as cancer, bone loss, arthritic conditions, migraine headaches, pre-menstrual syndrome, and obesity in children. It also functions as a health aid in losing unwanted fats and reducing weight. Calcium is an essential mineral in the creation of bone matter, and bone mineral density measurements rely highly on calcium as the main support structure of our body. It is the quickest, least expensive, and most readily available source of calcium on the market.</p>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="reveal" id="rehidration" data-reveal>
+            <h2 id="modalTitle">Rehydration</h2>
+            <p class="lead">Fluids are an integral part of the human body, and the body needs to be frequently replenished with liquids as they are used up within the body.</p>
+            <p class="lead">Water is essential for growing children and they must drink at least six to eight glasses of fluid every day. Milk contains a good quantity of water molecules and is considered the best fluid for rehydration, outside of drinking actual water. Water makes up more than 80% of our body mass, and the balance of fluids in our body is essential for every single process in our body. That is why, dehydration is such a major and dangerous problem, as it threatens all of our metabolic functions. So, if you can’t find any water, grab a glass of milk!</p>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="reveal" id="diet" data-reveal>
+            <h2 id="modalTitle">Improving Diet & Vitamin Intake</h2>
+            <p class="lead">According to medical research, drinking milk considerably improves our intake of vital minerals and vitamins.</p>
+            <p class="lead">A person who consumes a carton of whole milk doubles his chances of fulfilling his calcium requirement for the day, whereas another person consuming a can of carbonated soda may actually lower his calcium levels by 1/3. Calcium, along with all of the other essential minerals listed above, are necessary for the daily diet in order to ensure proper functioning of every aspect of our body</p>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
     </section>
 
@@ -75,27 +102,49 @@
         <div class="row processImgSection">
             <div class="small-2 large-4 columns">
                 <div>
-                    <img src="./img/cow.jpg">
+                    <a data-open="cow"><img src="./img/cow.jpg"></a>
                     <!--                    <p>From the cow</p>-->
                 </div>
             </div>
             <div class="small-4 large-4 columns">
                 <div>
-                    <img src="./img/factory.jpg">
+                    <a data-open="factory"><img src="./img/factory.jpg"></a>
                     <!--                    <p>From the cow</p>-->
                 </div>
             </div>
             <div class="small-6 large-4 columns">
                 <div>
-                    <img src="./img/milk.jpg">
+                    <a data-open="you"><img src="./img/milk.jpg"></a>
                     <!--                    <p>From the cow</p>-->
                 </div>
             </div>
+        </div>
+        <div class="reveal" id="cow" data-reveal>
+            <h2 id="modalTitle">From the cow</h2>
+            <p class="lead">Our milk is collected from selected farmers with high breeds of cattle. Grading is first done at the collection centers to ensure that only good quality milk is accepted.  The good milk is then chilled and transported to the factory for processing.</p>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="reveal" id="factory" data-reveal>
+            <h2 id="modalTitle">To the factory</h2>
+            <p class="lead">Upon arrival at the factory, further quality checks are conducted to the raw milk to ensure that only the highest quality milk is processed. Accepted milk is then processed through Ultra High Temperatures to ensure destruction of all spoilage and pathogenic microorganisms. Samples of the processed milk is then analysed in the lab for 7 days and thereafter only dispatched to the consumers when confirmed to be of perfect quality</p>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="reveal" id="you" data-reveal>
+            <h2 id="modalTitle">To you</h2>
+            <p class="lead">Our milk is currently available in all towns across Kenya</p>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
     </section>
 
     <!-------------- CONTACT ---------------->
     <section class="contact">
+        <a id="contact"></a>
         <div class="row contactHeader">
             <h4>Contact</h4>
             <p>We would really love to hear from you!</p>
