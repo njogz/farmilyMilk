@@ -1,0 +1,188 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*************** Navigation *************/
+
+.nav ul li {
+    display: inline-block;
+    color: #00AEE8;
+}
+
+.nav ul {
+    text-align: center;
+}
+
+.fa-linkedin {
+    padding: 10px;
+    background: #35CAC9;
+    border-radius: 50%;
+    color: white;
+}
+
+.fa-facebook {
+    padding: 10px;
+    background: #008BCC;
+    border-radius: 50%;
+    color: white;
+    width: 35px;
+}
+
+.fa-instagram {
+    padding: 10px;
+    background: #FF429A;
+    border-radius: 50%;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .socialIcons {
+        display: none
+    }
+    .logo {
+        display: none;
+    }
+}
+
+
+/*************** Hero *************/
+
+.hero {
+    background: url(../img/hero.jpg);
+    height: 100%;
+    position: relative;
+    background-size: 100% 100%
+}
+
+.heroFooter {
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    background: blue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*************** Benefits *************/
+
+.benefits {
+    background: #F0F0F0;
+    text-align: center;
+    padding: 70px 0px;
+}
+
+.benefits h4 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #00ADE9;
+    padding-bottom: 20px;
+}
+
+.benefits img {
+    width: 65px;
+}
+
+
+/*************** Process *************/
+
+.process {
+    text-align: center;
+}
+
+.process h4 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #00ADE9;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.process hr {
+    width: 130px;
+}
+
+.processImgSection img {
+    height: 315px;
+    width: 100%;
+}
+
+.processImgSection {
+    background: #F0F0F0;
+    min-width: 100%;
+    padding: 80px 20px;
+}
+
+
+/*************** Contacts *************/
+
+.contact {
+    background: #F0F0F0;
+}
+
+.contactHeader {
+    text-align: center;
+    padding: 30px 0px;
+    background: white;
+    min-width: 100%;
+}
+
+.contactHeader h4 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #00ADE9;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.contactHeader hr {
+    width: 130px;
+}
+
+.imgContact {
+    height: 80vh;
+    background: url(../img/4242896-milk.jpg);
+    min-width: 100%;
+    background-size: contain;
+}
+
+.form {
+    width: 70%;
+    margin-top: -15%;
+    background: white;
+    padding: 40px;
+    border-radius: 3px;
+}
+
+.form #submitBtn {
+    background: #2A008C;
+    color: white;
+    padding: 15px 31px;
+    border: none;
+    border-radius: 3px;
+}
+
+.contact .large-7 {
+    width: 55%;
+}
+
+
+/*************** Footer *************/
+
+.footer {
+    background: #D7D7D7;
+    padding: 15px 0px;
+}
+
+.footer ul li {
+    display: inline-block;
+    color: #00AEE8;
+}
+
+.footer ul {
+    float: right;
+    margin-bottom: 0;
+}
