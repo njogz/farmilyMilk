@@ -196,6 +196,7 @@
 .orbit-caption{
     background-color: rgba(65,182,230,0.5);
     text-align: center;
+    text-transform: uppercase;
 }
   
   /* .fullscreen-image-slider .orbit-caption {
